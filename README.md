@@ -13,7 +13,7 @@
   is an interactive text-based mystery game developed with <a target="_blank" href="https://github.com/klembot/twinejs">Twine</a> <br /> by <a target="_blank" href="https://github.com/vxsilis">Vasilis Gavriilidis</a> and <a target="_blank" href="https://github.com/Geoross">Giorgos Rossis</a>
     <br />
     <br />
-    <a href="http://test18meres.netlify.app">Play The Game</a>
+    <a href="https://18mm.netlify.app/">Play The Game</a>
     ·
     <a href="https://github.com/vxsilis/dekaokto/issues">Report Bug</a>
     ·
@@ -117,7 +117,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 ## License
 
-View code and images licence [here](https://github.com/vxsilis/dekaokto/blob/main/LICENSE.md). <br />
+View code and images licence [here](https://github.com/vxsilis/dekaokto/blob/main/LICENSE). <br />
 All the sounds are free to use except chase.mp3, woman-fight.mp3, fight.mp3 which contain music that need to credit the [original artist](https://www.youtube.com/watch?v=9tYBMywPpgA)
 
 
