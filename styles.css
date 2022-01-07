@@ -1,0 +1,703 @@
+@font-face {
+    font-family: "Clothing Sans";
+    src: url("fonts/PVF_Clothing.otf");
+}
+@font-face {
+    font-family: "Clothing Sans Italics";
+    src: url("fonts/PVF_ClothingItalics.otf");
+    
+}
+@font-face {
+    font-family: "Clothing Sans Italics Light";
+    src: url("fonts/PVF_ClothingLight_Italics.otf");
+    
+    
+}
+@font-face {
+    font-family: "Clothing Sans Light";
+    src: url("fonts/PVF_ClothingLight.otf");
+    
+}
+
+.home, .about, .credits{
+	transition: .5;
+}
+
+html{
+	  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  cursor: url('images/cursor.png'),auto;
+
+}
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    
+    color: #C1B4A9;
+    font-family: "Clothing Sans";
+
+    
+
+}
+body{
+	background-color: #222222;
+	  background-image: url("images/bg.png");
+  background-position: bottom;
+  background-size: 1080px;
+
+}
+
+.logo{
+	height: 55vh;
+	width: 55vw;
+	
+	position: absolute;
+	left: 50%;
+	top:  0;
+	transform: translateX(-50%);
+	border: 0px solid yellow;
+	overflow: visible;
+	
+	
+}
+
+
+.people{
+	width: 22vw;
+	height: 100%;
+	position: absolute;
+	
+	display: flex;
+	flex-direction: column;
+
+	
+	justify-content: space-evenly;
+	align-items: center;
+	cursor: url('images/cur-what.png'),auto;
+}
+
+.left{
+	left: 0;
+}
+
+.right{
+	right: 0;
+}
+
+.menu{
+	height: 45vh;
+	width: 55vw;
+	
+	
+	position: absolute;
+		left: 50%;
+	bottom:  0;
+	transform: translateX(-50%);
+	border: 0px solid red;
+	
+}
+
+
+
+li div{
+	display: block;
+	text-decoration: none;
+	
+	text-align: center;
+	color: #557C62;
+
+}
+
+li div:hover{
+	display: block;
+	text-decoration: none;
+	
+	text-align: center;
+	color: #C1B4A9;
+	cursor: url('images/cur-point.png'), auto;
+
+}
+
+div a{
+	cursor: url('images/cur-point.png'), auto;
+}
+
+li{
+	list-style-type: none;
+	font-size: 2.5rem;
+	
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	width: 70%;
+
+}
+
+
+
+
+.logo img{
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	overflow: visible;
+
+}
+
+
+.one{
+	grid-area: one;
+	
+	background-image: url('images/1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: .7;
+}
+
+.one:hover::after{
+	content: "'Άλεξ";
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+
+.two{
+	grid-area: two;
+	
+	background-image: url('images/2.png');
+	background-size: contain;
+	background-repeat: no-repeat;	
+	opacity: .7;
+}
+.two:hover::after{
+	content: 'Επίδρομος';
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+
+
+
+.three{
+	grid-area: three;
+	
+	background-image: url('images/3.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: .7;
+}
+.three:hover::after{
+	content: "'Οουεν";
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.four{
+	grid-area: four;
+	
+	background-image: url('images/5.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: .7;
+}
+.four:hover::after{
+	content: 'Μπρίνα';
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.five{
+	grid-area: five;
+	
+	background-image: url('images/4.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: .7;
+}
+.five:hover::after{
+	content: 'Τσακ';
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.six{
+	grid-area: six;
+	
+	background-image: url('images/6.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: .7;
+}
+.six:hover::after{
+	content: 'Θάλεια';
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+.person{
+	height: 110px;
+	width: 110px;
+	
+	transition: .2s;
+	border-radius: 15%;
+}
+
+
+.persons:hover > *:hover {
+	transform: scale(1.0);
+	transition: .1s linear;
+	
+  opacity: 1;
+  
+  
+}
+
+
+.persons:hover > * {
+  	transform: scale(0.9);
+	transition: .1s;
+	opacity: .5;
+	
+
+}
+
+.person img{
+	width: 100%;
+}
+
+
+
+
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+.enarksi{
+			transition: .5;
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+}
+
+
+
+
+.enarksi-title img {
+	position: relative;
+	width: 550px;
+	
+}
+
+
+.start-container{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-60%);
+	
+	
+		font-size: 2rem;
+	font-family: "Clothing Sans Light";
+	line-height: 30px;
+	width: 60vw;
+}
+
+
+
+
+.etoimos{
+	font-size: 2.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	text-align: center;
+	color: #557C62;
+	text-decoration: none;
+	width: 100%;
+}
+
+
+.etoimos:hover{	
+	text-align: center;
+	color: #C1B4A9;
+	cursor: url('images/cur-point.png'), auto;
+
+}
+
+
+.etoimos:hover:after{	
+	content: "?";
+
+}
+
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+
+br{
+	padding: 10px;
+}
+
+
+.about{
+		transition: .5;
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+}
+
+
+
+.about-container{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+	
+		font-size: 1.5rem;
+	font-family: "Clothing Sans Light";
+	line-height: 30px;
+	width: 60vw;
+}
+
+.about-title{
+	font-size: 5rem;
+	font-family: "Clothing Sans Light";
+	line-height: 150px;
+	
+}
+
+
+.about-title img {
+	position: relative;
+	width: 600px;
+	
+}
+
+.about-container a{
+	color: #557C62;
+}
+
+
+.orange{
+	display: inline-block;
+	color: #B1723A;
+}
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+
+
+.credits{
+		transition: .5;
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+}
+
+.back{
+
+	position: absolute;
+	left: 60px;
+	top: 60px;
+	
+	z-index: 99;
+	transition: .3s;
+}
+
+.back img{
+	height: 60px;
+}
+
+.back:hover{
+	transform: scale(1.1);
+	transition: .3s;
+	cursor: url('images/cur-point.png'), auto;
+}
+
+
+.credits-container{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+	width: 90%;
+}
+
+.credits-title img {
+	position: relative;
+	width: 600px;
+	
+}
+
+
+
+
+.credits-title{
+	position: relative;
+}
+
+.credits-cat{
+	margin-top: 40px;
+	font-size: 2.3rem;
+	color: #B1723A;
+	font-family: "Clothing Sans Italics Light";
+}
+
+
+.credits-info{
+	font-size: 2.7rem;
+	color: #557C62;
+	font-family: "Clothing Sans Light";
+	
+}
+
+.smalls{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	font-size: 1.7rem;
+	font-family: "Clothing Sans Italics Light";
+	justify-content: space-evenly;
+}
+
+
+.footer{
+	margin-top: 40px;
+	font-size: 1.4rem;
+	color: #B1723A;
+
+}
+
+.smalls a:hover{
+	opacity: .7;
+}
+
+
+
+.thanks{
+	color: #C1B4A9;
+	font-size: 1.8rem;
+	line-height: 0.9;
+}
+
+
+
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+
+
+
+
+
+
+.show{
+	transition: .5;
+	opacity: 1;
+	visibility: visible;
+	display: block;
+
+}
+
+
+.hidden{
+	transition: .5;
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+}
+
+
+
+/**************************************************/
+/**************************************************/
+/**************************************************/
+/**************************************************/
+
+
+/* On screens that are 1000px or less*/
+@media screen and (max-width: 1000px) {
+	.people{
+		flex-direction: row;
+		border: 0px solid pink;
+		height: 16vh;
+		width: 90vw;
+
+	}
+	.left{
+		left: initial;
+		bottom: 16vh;
+		right: 50%;
+    
+    transform: translateX(50%);
+
+	}
+	.right{
+		right: initial;
+		bottom: 0;
+		left: 50%;   
+	    transform: translateX(-50%);
+	}
+
+	.logo{
+		height: 33vh;
+		width: 90vw;
+	}
+
+	.menu{
+		height: 33vh;
+		width: 90vw;
+		top: 50%;
+    	transform: translate(-50%,-50%);
+	}
+	.all-the-avatars{
+		display: flex;
+		flex-direction: column;
+	}
+	.one:hover::after{
+		content: '';
+	}
+	.two:hover::after{
+		content: '';
+	}
+
+	.three:hover::after{
+		content: '';
+	}
+	.four:hover::after{
+		content: '';
+	}
+	.five:hover::after{
+		content: '';
+	}
+	.six:hover::after{
+		content: '';
+	}
+
+
+	.about-container, .start-container{
+		transform: translate(-50%,-50%);
+		
+		
+	}
+
+
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+
+	li{
+		font-size: max(1.5rem,6vw);
+	}
+
+
+
+	.one{
+		background-size: 80%;
+	}
+	.two{
+		background-size: 80%;
+	}
+	.three{
+		background-size: 80%;
+	}
+	.four{
+		background-size: 80%;
+	}
+	.five{
+		background-size: 80%;
+	}
+	.six{
+		background-size: 80%;
+	}
+
+
+
+
+	.back{
+		left: 20px;
+		top: 20px;
+	}
+	.back img{
+		height: 40px;
+	}
+
+	.about-container, .start-container, .credits-container{
+		width: 90vw;
+		position: relative;
+		
+		
+		transform: translate(0) translateX(-50%) translateY(20vw);
+	}
+
+	.about-title, .enarksi-title, .credits-title{
+		line-height: 70px;
+	}
+	.about-title img, .enarksi-title img, .credits-title img{
+		width: max(1.5rem,90vw);
+	}
+
+
+	.etoimos{
+		font-size: 2rem;
+		width: 100%;
+	}
+
+	.credits-cat{
+		font-size: 1.8rem;
+	}
+	.credits-info{
+		font-size: 2rem;
+	}
+	.smalls{
+		flex-direction: column;
+		font-size: 1.3rem;
+	}
+	.thanks{
+		font-size: 1.6rem;
+	}
+
+}
+
+
