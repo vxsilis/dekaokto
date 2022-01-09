@@ -1,5 +1,3 @@
-[WIP]
-
 <br />
 <div align="center">
   <a href="https://github.com/vxsilis/dekaokto">
@@ -66,7 +64,7 @@ By forking and importing the file to Twine you automatically import the Harlowe 
 
 ```index.html``` is the main menu of the game which procceds to ```game.html``` which is the actual file written in Twine.
 
-The ```game.html``` file is not supposed to be opened with a classic text editor but only throught the Twine Engine. The custom CSS and JS used for this project will appear under "Story JavaScript" and "Story Stylesheet" but you can also find the isolated code used [here](www.github.com).
+The ```game.html``` file is not supposed to be opened with a classic text editor but only throught the Twine Engine. The custom CSS and JS used for this project will appear under "Story JavaScript" and "Story Stylesheet" but you can also find the isolated code used [here](https://github.com/vxsilis/dekaokto/tree/main/in-game%20code).
 
 
 
