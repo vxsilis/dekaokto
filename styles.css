@@ -1,4 +1,4 @@
-@font-face {
+@font-face { /* load fonts from file */
     font-family: "Clothing Sans";
     src: url("fonts/PVF_Clothing.otf");
 }
@@ -19,51 +19,39 @@
     
 }
 
-.home, .about, .credits{
-	transition: .5;
-}
 
 html{
-	  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  cursor: url('images/cursor.png'),auto;
-
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	cursor: url('images/cursor.png'),auto;
 }
-
 
 
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
-    
     color: #C1B4A9;
     font-family: "Clothing Sans";
-
-    
-
 }
+
 body{
 	background-color: #222222;
-	  background-image: url("images/bg.png");
-  background-position: bottom;
-  background-size: 1080px;
-
+	background-image: url("images/bg.png");
+  	background-position: bottom;
+  	background-size: 1080px;
 }
 
 .logo{
 	height: 55vh;
 	width: 55vw;
-	
 	position: absolute;
 	left: 50%;
 	top:  0;
 	transform: translateX(-50%);
 	border: 0px solid yellow;
-	overflow: visible;
-	
-	
+	overflow: visible;	
 }
 
 
@@ -71,11 +59,8 @@ body{
 	width: 22vw;
 	height: 100%;
 	position: absolute;
-	
 	display: flex;
 	flex-direction: column;
-
-	
 	justify-content: space-evenly;
 	align-items: center;
 	cursor: url('images/cur-what.png'),auto;
@@ -92,22 +77,17 @@ body{
 .menu{
 	height: 45vh;
 	width: 55vw;
-	
-	
 	position: absolute;
-		left: 50%;
+	left: 50%;
 	bottom:  0;
 	transform: translateX(-50%);
-	border: 0px solid red;
-	
+	border: 0px solid red;	
 }
-
 
 
 li div{
 	display: block;
 	text-decoration: none;
-	
 	text-align: center;
 	color: #557C62;
 
@@ -116,7 +96,6 @@ li div{
 li div:hover{
 	display: block;
 	text-decoration: none;
-	
 	text-align: center;
 	color: #C1B4A9;
 	cursor: url('images/cur-point.png'), auto;
@@ -130,7 +109,6 @@ div a{
 li{
 	list-style-type: none;
 	font-size: 2.5rem;
-	
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
@@ -138,8 +116,6 @@ li{
 	width: 70%;
 
 }
-
-
 
 
 .logo img{
@@ -154,8 +130,7 @@ li{
 
 
 .one{
-	grid-area: one;
-	
+	grid-area: one; /* set their grid placing */
 	background-image: url('images/1.png');
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -163,18 +138,15 @@ li{
 }
 
 .one:hover::after{
-	content: "'Άλεξ";
+	content: "'Άλεξ"; /* on hover avatar's name is displayed */
 	position: absolute;
 	bottom: -20px;
 	left: 50%;
 	transform: translateX(-50%);
 }
 
-
-
 .two{
 	grid-area: two;
-	
 	background-image: url('images/2.png');
 	background-size: contain;
 	background-repeat: no-repeat;	
@@ -186,14 +158,10 @@ li{
 	bottom: -20px;
 	left: 50%;
 	transform: translateX(-50%);
-
 }
-
-
 
 .three{
 	grid-area: three;
-	
 	background-image: url('images/3.png');
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -209,7 +177,6 @@ li{
 
 .four{
 	grid-area: four;
-	
 	background-image: url('images/5.png');
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -225,7 +192,6 @@ li{
 
 .five{
 	grid-area: five;
-	
 	background-image: url('images/4.png');
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -240,7 +206,6 @@ li{
 }
 .six{
 	grid-area: six;
-	
 	background-image: url('images/6.png');
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -256,38 +221,24 @@ li{
 
 
 
-
-
-
-
-
-
-
 .person{
 	height: 110px;
 	width: 110px;
-	
 	transition: .2s;
 	border-radius: 15%;
 }
 
 
-.persons:hover > *:hover {
+.persons:hover > *:hover {/* when u hover on persons div and also hover on a single person */
 	transform: scale(1.0);
 	transition: .1s linear;
-	
-  opacity: 1;
-  
-  
+  	opacity: 1;
 }
 
-
-.persons:hover > * {
+.persons:hover > * { /* when you hover on persons but not hovered on a person */
   	transform: scale(0.9);
 	transition: .1s;
-	opacity: .5;
-	
-
+	opacity: .5;	
 }
 
 .person img{
@@ -296,27 +247,20 @@ li{
 
 
 
+/*START PAGE*/
 
-/**************************************************/
-/**************************************************/
-/**************************************************/
-/**************************************************/
 .enarksi{
-			transition: .5;
+	transition: .5;
 	opacity: 0;
 	visibility: hidden;
 	display: none;
 }
 
 
-
-
 .enarksi-title img {
 	position: relative;
 	width: 550px;
-	
 }
-
 
 .start-container{
 	position: absolute;
@@ -324,15 +268,11 @@ li{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-60%);
-	
-	
-		font-size: 2rem;
+	font-size: 2rem;
 	font-family: "Clothing Sans Light";
 	line-height: 30px;
 	width: 60vw;
 }
-
-
 
 
 .etoimos{
@@ -351,19 +291,14 @@ li{
 	text-align: center;
 	color: #C1B4A9;
 	cursor: url('images/cur-point.png'), auto;
-
 }
 
 
 .etoimos:hover:after{	
 	content: "?";
-
 }
 
-/**************************************************/
-/**************************************************/
-/**************************************************/
-/**************************************************/
+/* ABOUT PAGE */
 
 br{
 	padding: 10px;
@@ -371,13 +306,11 @@ br{
 
 
 .about{
-		transition: .5;
+	transition: .5;
 	opacity: 0;
 	visibility: hidden;
 	display: none;
 }
-
-
 
 .about-container{
 	position: absolute;
@@ -385,9 +318,7 @@ br{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	
-	
-		font-size: 1.5rem;
+	font-size: 1.5rem;
 	font-family: "Clothing Sans Light";
 	line-height: 30px;
 	width: 60vw;
@@ -397,9 +328,7 @@ br{
 	font-size: 5rem;
 	font-family: "Clothing Sans Light";
 	line-height: 150px;
-	
 }
-
 
 .about-title img {
 	position: relative;
@@ -416,25 +345,21 @@ br{
 	display: inline-block;
 	color: #B1723A;
 }
-/**************************************************/
-/**************************************************/
-/**************************************************/
-/**************************************************/
+
+/* CREDIT PAGE */
 
 
 .credits{
-		transition: .5;
+	transition: .5;
 	opacity: 0;
 	visibility: hidden;
 	display: none;
 }
 
 .back{
-
 	position: absolute;
 	left: 60px;
 	top: 60px;
-	
 	z-index: 99;
 	transition: .3s;
 }
@@ -465,8 +390,6 @@ br{
 	width: 600px;
 	
 }
-
-
 
 
 .credits-title{
@@ -518,16 +441,7 @@ br{
 }
 
 
-
-/**************************************************/
-/**************************************************/
-/**************************************************/
-/**************************************************/
-
-
-
-
-
+/* to hide or show div classes from the js script  */
 
 .show{
 	transition: .5;
@@ -547,10 +461,8 @@ br{
 
 
 
-/**************************************************/
-/**************************************************/
-/**************************************************/
-/**************************************************/
+/* MEDIA QUERIES */
+
 
 
 /* On screens that are 1000px or less*/
@@ -558,13 +470,13 @@ br{
 	.people{
 		flex-direction: row;
 		border: 0px solid pink;
-		height: 16vh;
+		height: 14vh;
 		width: 90vw;
 
 	}
 	.left{
 		left: initial;
-		bottom: 16vh;
+		bottom: 14vh;
 		right: 50%;
     
     transform: translateX(50%);
@@ -592,7 +504,7 @@ br{
 		display: flex;
 		flex-direction: column;
 	}
-	.one:hover::after{
+	.one:hover::after{ /* remove avatar names on mobile cause there is no space */
 		content: '';
 	}
 	.two:hover::after{
@@ -611,27 +523,22 @@ br{
 	.six:hover::after{
 		content: '';
 	}
-
-
 	.about-container, .start-container{
 		transform: translate(-50%,-50%);
 		
-		
 	}
-
-
-
 
 }
 
+/* FOR SMALLER SCREENS */
 @media screen and (max-width: 800px) {
-
-
-	li{
-		font-size: max(1.5rem,6vw);
+	body{
+		background-size: 600px;
 	}
 
-
+	li{
+		font-size: max(1.5rem,5.8vw);
+	}
 
 	.one{
 		background-size: 80%;
@@ -653,8 +560,6 @@ br{
 	}
 
 
-
-
 	.back{
 		left: 20px;
 		top: 20px;
@@ -666,8 +571,6 @@ br{
 	.about-container, .start-container, .credits-container{
 		width: 90vw;
 		position: relative;
-		
-		
 		transform: translate(0) translateX(-50%) translateY(20vw);
 	}
 
@@ -677,7 +580,6 @@ br{
 	.about-title img, .enarksi-title img, .credits-title img{
 		width: max(1.5rem,90vw);
 	}
-
 
 	.etoimos{
 		font-size: 2rem;
