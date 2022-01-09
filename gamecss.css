@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Clothing Sans";
+  src: url("fonts/PVF_Clothing.otf");
+}
+
+.mes-img{
+  height:400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tw-expression{
+  margin: 0px auto;
+}
+
+tw-story {
+  font-family: "Clothing Sans";
+  cursor: url(images/cursor.png), auto;
+  background:#222222;
+  transition:.3s;
+  background-image: url("images/bg.png");
+  background-position: bottom;
+  background-size: 1080px;
+}
+
+
+tw-link,
+.enchantment-link {
+  color: white;
+  transition:0s;
+    cursor: url(images/cur-point.png), auto;
+}
+
+
+tw-link:hover,
+.enchantment-link {
+  color: #557C62;
+}
+
+tw-sidebar {display:none;}
+
+tw-passage {
+  color: #C1B4A9;
+  border: 0px solid pink;
+  font-size: 22px;
+}
+
+.story {
+  border: 0px solid green;
+  top: 20px;
+  text-align: justify;
+}
+
+.options { /* options have the flex layout to be placed automatically */
+  margin-top:70px;
+  display: flex;
+  flex-flow: row no-wrap;
+  justify-content: space-between;
+  border: 0px solid yellow;
+  text-align: center;
+}
+
+
+.optionsc {
+  margin-top:70px;
+  display: flex;
+  flex-direction:column;
+  flex-flow: row no-wrap;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: center;
+}
+
+
+/* hide scroll bar */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  
+  width: 0;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  
+  width: 0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  
+  width: 0;
+}
+
+
+.tsak{
+	color:#CCCA8D }
+
+.brina{
+	color:#A9A9A9 }
+
+.thaleia{
+	color:#75475A }
+
+@media only screen and (max-width: 800px) {
+  .options {
+  	flex-direction: column;
+  }
+
+}
+
+.starting{
+  text-align:center;
+  position: relative; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.end{
+	position: absolute;
+	text-align: center;
+}
+
+.end-title{
+	font-size: 2.5rem;
+	color: #557C62;
+}
+
+.end a{
+  color: #557C62;
+  cursor: url('images/cur-point.png'), auto;
+}
+
+.end a:hover{
+  	color: white;
+}
+
+.oo-cur{
+  cursor: url("images/3s.png"), auto;
+}
+.ep-cur{
+  cursor: url("images/2s.png"), auto;
+}
+.mp-cur{
+  cursor: url("images/5s.png"), auto;
+}
+.al-cur{
+  cursor: url("images/1s.png"), auto;
+}
+.tha-cur{
+  cursor: url("images/6s.png"), auto;
+}
+.tsak-cur{
+  cursor: url("images/4s.png"), auto;
+}
