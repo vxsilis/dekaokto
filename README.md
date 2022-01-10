@@ -43,6 +43,7 @@
 ## About The Project
 
 
+<img src="https://github.com/vxsilis/dekaokto/blob/main/images/18mm.gif" height="250" />
 
 
 ### Built With
