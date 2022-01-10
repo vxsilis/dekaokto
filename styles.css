@@ -581,17 +581,21 @@ br{
 		width: max(1.5rem,90vw);
 	}
 
+
+
+	.credits-cat, .start-container{
+		font-size: 1.5rem;
+	}
+	.about-container{
+		font-size: 1.4rem;
+	}
 	.etoimos{
 		font-size: 2rem;
 		width: 100%;
 		padding-bottom: 20px;
 	}
-
-	.credits-cat{
-		font-size: 1.8rem;
-	}
 	.credits-info{
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 	.smalls{
 		flex-direction: column;
