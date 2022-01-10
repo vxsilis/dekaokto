@@ -49,47 +49,6 @@ var pouu = ["images/pou1.png" ,"images/pou2.png" ,"images/pou3.png"  ,"images/po
 var startt = ["images/start.png" ,"images/start2.png" ,"images/start3.png"  ,"images/start4.png","images/start5.png" ];
 
 
-async function cred(){// for the credit animation
-        for (let i = 0; i < 5; i++) {
-                document.getElementById("cred").src = credd[i];// loop through the array with the images
-                await timer(145);// with a small delay
-        }
-        cred();
-}
-
-cred();// call the function again so it loops forever
-
-
-async function logo(){// for the main logo animation
-        for (let i = 0; i < 5; i++) {
-                document.getElementById("logo").src = logoo[i];
-                await timer(170);
-        }
-        logo();
-}
-
-logo();
-
-async function pou(){
-        for (let i = 0; i < 3; i++) {
-                document.getElementById("pou").src = pouu[i];
-                await timer(170);
-        }
-        pou();
-}
-
-pou();
-
-
-async function start(){
-        for (let i = 0; i < 3; i++) {
-                document.getElementById("start").src = startt[i];
-                await timer(170);
-        }
-        start();
-}
-
-start();
 
 
 
