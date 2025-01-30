@@ -8,7 +8,7 @@
 <h3 align="center">18 Μέρες Μετά (18 Days Later)</h3>
 
   <p align="center">
-  is an interactive text-based mystery game developed with <a target="_blank" href="https://github.com/klembot/twinejs">Twine</a> <br /> by <a target="_blank" href="https://github.com/vxsilis">Vasilis Gavriilidis</a> and <a target="_blank" href="https://github.com/Geoross">Giorgos Rossis</a>
+  is an interactive text-based mystery game developed with <a target="_blank" href="https://github.com/klembot/twinejs">Twine</a> <br /> 
     <br />
     <br />
     <a href="https://18mm.netlify.app/">Play The Game</a>
